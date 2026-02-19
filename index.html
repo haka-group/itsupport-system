@@ -117,6 +117,7 @@
         }
 
         b.innerText = "Saving Ticket...";
+        const now = new Date().toISOString();
         const p = {
             fields: {
                 "Employee Full Name": document.getElementById('n').value,
@@ -126,6 +127,7 @@
                 "Attachment": u,
                 "Contact Info": document.getElementById('cont').value,
                 "Status": "Incomplete"
+                "Submission Time": now
             }
         };
 
